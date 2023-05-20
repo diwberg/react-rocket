@@ -1,12 +1,14 @@
+
 .header{
     background: var(--grey-800);
     display: flex;
     justify-content: center;
-    height: 80px;
     padding: 1.25rem 0;
 }
 
-.head img{
-    height: 2rem;
-    
+
+
+.header h1 {
+    margin: auto .75rem;
+    color: var(--white);
 }

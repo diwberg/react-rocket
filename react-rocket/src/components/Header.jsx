@@ -6,8 +6,12 @@ export function Header() {
     return (
         <header>
             <strong className={styles.header}>
-            <img src={falamaisLogo} alt="logotipo do fala mais" />
-            Fala mais... [Feed]
+            <img 
+            src={falamaisLogo} 
+            className={styles.header} 
+            alt="logotipo do fala mais" 
+            />
+            <h1>ICYou Feed</h1> 
             </strong>
         </header>
     )
