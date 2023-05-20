@@ -8,8 +8,9 @@
     margin-top: 2rem;
 }
 
-.hashs > *:not(:first-child) {
+.hashs {
     margin-left: .5rem;
+
   }
 
 .content{
