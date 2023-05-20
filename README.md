@@ -13,12 +13,12 @@ A aplicação segue os modelos mais modernos de implementação, sempre prioriza
 ![Mobile 1](https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-1.jpeg) ![Mobile 2](https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-2.jpeg)
 
 ## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+![Web 1](https://github.com/diwberg/react-rocket/blob/main/public/template/pc-1.jpeg)
 
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
+![Web 2](https://github.com/diwberg/react-rocket/blob/main/public/template/pc-2.jpeg)
 
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+## Dependências
+![Dependências](https://github.com/diwberg/react-rocket/blob/main/public/template/dependence.jpeg)
 
 # Tecnologias utilizadas
 ## Front end
