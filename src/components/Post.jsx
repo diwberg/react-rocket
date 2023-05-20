@@ -81,6 +81,8 @@ export function Post(props){
                 onChange={handleNewCommentChange}
                 value={newCommentText}
                 placeholder="Deixe seu comentario"
+                required
+                
                  />
                 <footer>
                  <button type="submit">Públicar</button>
