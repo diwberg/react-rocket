@@ -10,7 +10,7 @@ Font-end de uma SPA para posts e comentarios, todo o projeto foi desenvolvido co
 A aplicação segue os modelos mais modernos de implementação, sempre priorizando o cleancode e a responsividade dos elementos.
 
 ## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![Mobile 1](https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-1.jpeg) ![Mobile 2](https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-2.jpeg)
 
 ## Layout web
 ![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
