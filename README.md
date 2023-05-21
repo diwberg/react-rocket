@@ -10,7 +10,10 @@ Font-end de uma SPA para posts e comentarios, todo o projeto foi desenvolvido co
 A aplicação segue os modelos mais modernos de implementação, sempre priorizando o cleancode e a responsividade dos elementos.
 
 ## Layout mobile
-![Mobile 1](https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-1.jpeg) ![Mobile 2](https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-2.jpeg)
+<img src="https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-1.jpeg" alt="Mobile 1" style="max-width: 300px; height: auto;">
+
+
+![Mobile 2](https://github.com/diwberg/react-rocket/blob/main/public/template/mobile-2.jpeg)
 
 ## Layout web
 ![Web 1](https://github.com/diwberg/react-rocket/blob/main/public/template/pc-1.jpeg)
