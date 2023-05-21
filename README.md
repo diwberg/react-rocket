@@ -36,7 +36,7 @@ A aplicação segue os modelos mais modernos de implementação, sempre prioriza
 - Input interativo
 - Validação de input vazio com ativação do botão
 - Exclusão de comentários
-- Integração com o comentário
+- Interação com o comentário
 
 
 # Como executar o projeto
