@@ -30,7 +30,7 @@ export function Post(props){
     }
 
     function handleNewCommentChange(event){
-        event.target.setCustomValidity('')
+        //event.target.setCustomValidity('')
         setNewCommentText(event.target.value)
     }
 
@@ -91,7 +91,7 @@ export function Post(props){
                 onChange={handleNewCommentChange}
                 value={newCommentText}
                 placeholder="Deixe seu comentário"
-                //onInvalid={handleNewCommentInvalid}
+                onInvalid={handleNewCommentInvalid}
                 required
 
                  />
