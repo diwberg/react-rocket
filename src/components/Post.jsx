@@ -2,6 +2,7 @@ import { useState } from 'react';
 import style from '../components/Post.module.css';
 import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
+import { FaCommentAlt } from "react-icons/fa"
 
 import { format, formatDistanceToNow } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
@@ -74,7 +75,7 @@ export function Post(props){
 
             <form className={style.commentForm} onSubmit={handleCreateNewComment}>
 
-                <strong>Deixe seu feedback</strong>
+            <FaCommentAlt className={style.icon} size={20} title="Deixe seu feedback" />
 
                 <textarea
                 name='comment'

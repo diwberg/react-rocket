@@ -71,6 +71,10 @@
     padding-top: 1.5rem;
     border-top: 2px solid var(--grey-600);
 }
+.icon {
+    align-items: flex-start;
+    
+}
 .commentForm > strong {
     line-height: 1.6;
     color: var(--grey-100);
