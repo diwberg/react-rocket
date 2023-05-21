@@ -23,18 +23,18 @@ export function Post(props){
 
     const [ comments, setComments ] = useState([])
 
-    function handleCreateNewComment(){
+    function handleCreateNewComment(event){
         event.preventDefault()
         setComments([...comments, newCommentText])
         setNewCommentText('')
     }
 
-    function handleNewCommentChange(){
+    function handleNewCommentChange(event){
         event.target.setCustomValidity('')
         setNewCommentText(event.target.value)
     }
 
-    function handleNewCommentInvalid(){
+    function handleNewCommentInvalid(event){
         event.target.setCustomValidity("Você não pode fazer comentários varios")
 
     }
