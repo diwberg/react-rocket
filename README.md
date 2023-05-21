@@ -1,5 +1,5 @@
 # Posts Feed 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/diwberg/next-react/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/diwberg/react-rocket/blob/main/LICENSE) 
 
 # Sobre o projeto
 ## Feed de Posts e Comentários em React
