@@ -92,6 +92,9 @@
     line-height: 1.4;
     margin-top: 1rem;
 }
+.commentForm textarea:focus{
+    box-shadow: 0 0 0 2px var(--purple-500);
+}
 .commentForm footer{
     transition: max-height 1s ease;
     visibility: hidden;
@@ -116,10 +119,15 @@
     border: 0;
     cursor: pointer;
 
-    transition: background .2s, color .1s;
+    transition: background .2s, color .1s, opacity .5s;
+}
+.commentForm button[type="submit"]:disabled{
+    background: var(--purple-500);
+    opacity: .6;
+    cursor: not-allowed;
 }
 
-.commentForm button[type="submit"]:hover{
+.commentForm button[type="submit"]:not(:disabled):hover{
     background: var(--purple-100);
     color: var(--white);
 }
