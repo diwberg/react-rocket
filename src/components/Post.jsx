@@ -91,7 +91,7 @@ export function Post(props){
                 onChange={handleNewCommentChange}
                 value={newCommentText}
                 placeholder="Deixe seu comentário"
-                onInvalid={handleNewCommentInvalid}
+                //onInvalid={handleNewCommentInvalid}
                 required
 
                  />
