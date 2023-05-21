@@ -2,10 +2,11 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/diwberg/next-react/blob/main/LICENSE) 
 
 # Sobre o projeto
-
+## Feed de Posts e Comentários em React
 https://react-rocket.vercel.app/
 
-Font-end de uma SPA para posts e comentarios, todo o projeto foi desenvolvido com React e Vite, pode conferir as funcionalidades no link [ICYou Feed](https://react-rocket.vercel.app/ "Site do projeto").
+Font-end de uma SPA para posts e comentarios, todo o projeto foi desenvolvido com React/Vite com JSX, pode conferir as funcionalidades no link [ICYou Feed](https://react-rocket.vercel.app/ "Site do projeto").
+[Mesmo projeto em TypeScript - TSX](https://github.com/diwberg/react-rocket-tsx "Prejeto com tipagem TSX")
 
 A aplicação segue os modelos mais modernos de implementação, sempre priorizando o cleancode e a responsividade dos elementos.
 
