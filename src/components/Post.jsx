@@ -24,13 +24,13 @@ export function Post(props){
     const [ comments, setComments ] = useState([])
 
     function handleCreateNewComment(event){
-        event.preventDefault()
+        //event.preventDefault()
         setComments([...comments, newCommentText])
         setNewCommentText('')
     }
 
     function handleNewCommentChange(event){
-        //event.target.setCustomValidity('')
+        event.target.setCustomValidity('')
         setNewCommentText(event.target.value)
     }
 
