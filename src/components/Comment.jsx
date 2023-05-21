@@ -1,11 +1,31 @@
 import { FaTrashAlt, FaRegThumbsUp } from "react-icons/fa";
 import style from "./Comment.module.css"
 import { Avatar } from "./Avatar";
+import { useState } from "react";
 
-export function Comment({index, content, author, deleteComment}) {
+import { format, formatDistanceToNow } from "date-fns";
+import ptBR from "date-fns/locale/pt-BR";
+
+export function Comment({index, content, publish, author, deleteComment}) {
     function handleDeleteComment(){
         deleteComment(index)
     }
+
+    const [ countLikes, setCountLikes ] = useState(0)
+
+    function handleLikeComment(){
+        setCountLikes((state) => {
+            return state + 1
+        })
+    }
+
+    
+    const publishPtBr = format(publish, "dd 'de' LLLL 'ás' HH:mm'h'", {locale: ptBR,})
+
+    const publishDateUntilNow = formatDistanceToNow(publish, {
+        locale: ptBR,
+        addSuffix: true,
+    })
 
     return (
         <div className={style.comment}>
@@ -16,9 +36,9 @@ export function Comment({index, content, author, deleteComment}) {
                         <div className={style.authorAndTime}>
                             <strong>{author}</strong>
                             <time
-                                title='18 de Março ás 23:00'
-                                dateTime='2023-03-18 23:00:00'>
-                                Cerca de 1h atrás
+                                title={publishPtBr}
+                                dateTime={publish}>
+                                {publishDateUntilNow}
                             </time>
                         </div>
 
@@ -34,8 +54,8 @@ export function Comment({index, content, author, deleteComment}) {
 
                 </div>
                 <footer>
-                    <button>
-                    <FaRegThumbsUp size={20} />Gostei <span>20</span>
+                    <button onClick={handleLikeComment}>
+                    <FaRegThumbsUp size={20} />Gostei <span>{countLikes}</span>
                     </button>
                 </footer>
             </div>

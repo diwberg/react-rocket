@@ -26,6 +26,15 @@ A aplicação segue os modelos mais modernos de implementação, sempre prioriza
 - ReactJS
 - React Doom
 - Vite
+## Features
+- Responsive
+- Datas e contadores formatados (date-fns)
+- Dados abstraídos (Array fazendo o papel de DB)
+- Input interativo
+- Validação de input vazio com ativação do botão
+- Exclusão de comentários
+- Integração com o comentário
+
 
 # Como executar o projeto
 

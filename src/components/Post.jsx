@@ -29,7 +29,13 @@ export function Post(props){
     }
 
     function handleNewCommentChange(){
+        event.target.setCustomValidity('')
         setNewCommentText(event.target.value)
+    }
+
+    function handleNewCommentInvalid(){
+        event.target.setCustomValidity("Você não pode fazer comentários varios")
+
     }
 
     function deleteComment(commentToDelete){
@@ -40,6 +46,9 @@ export function Post(props){
 
         setComments(commentsWithoutDeleted);
     }
+
+    const isNewCommentEmpty = newCommentText.length == 0
+    
     return (
         <article className={style.post}>
             <header>
@@ -80,12 +89,13 @@ export function Post(props){
                 name='comment'
                 onChange={handleNewCommentChange}
                 value={newCommentText}
-                placeholder="Deixe seu comentario"
+                placeholder="Deixe seu comentário"
+                onInvalid={handleNewCommentInvalid}
                 required
-                
+
                  />
                 <footer>
-                 <button type="submit">Públicar</button>
+                 <button name='posted' type="submit" onClick={handleCreateNewComment} disabled={isNewCommentEmpty}>Públicar</button>
                 </footer>
 
             </form>
@@ -94,6 +104,7 @@ export function Post(props){
             {comments.map((comment,index) => {
                     return <Comment key={index} 
                     index={index}
+                    publish={Date.now()}
                     author="Diwberg de Andrade" 
                     content={comment}
                     deleteComment={deleteComment}
