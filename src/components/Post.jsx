@@ -19,20 +19,22 @@ export function Post(props){
         locale: ptBR,
         addSuffix: true,
     })
-    const [newCommentText, setNewCommentText] = useState("")
+    const [ newCommentText, setNewCommentText ] = useState('')
 
     const [ comments, setComments ] = useState([])
 
     function handleCreateNewComment(event){
-        //event.preventDefault()
+        event.preventDefault()
         setComments([...comments, newCommentText])
         setNewCommentText('')
     }
 
     function handleNewCommentChange(event){
         event.target.setCustomValidity('')
+
         setNewCommentText(event.target.value)
     }
+
 
     function handleNewCommentInvalid(event){
         event.target.setCustomValidity("Você não pode fazer comentários varios")
@@ -93,10 +95,9 @@ export function Post(props){
                 placeholder="Deixe seu comentário"
                 onInvalid={handleNewCommentInvalid}
                 required
-
                  />
                 <footer>
-                 <button name='posted' type="submit" onClick={handleCreateNewComment} disabled={isNewCommentEmpty}>Públicar</button>
+                 <button name='posted' type="submit" disabled={isNewCommentEmpty}>Públicar</button>
                 </footer>
 
             </form>
