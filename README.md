@@ -63,5 +63,5 @@ npm run dev
 
 Diwberg de Andrade Pereira
 
-https://www.github.com/diwberg
+[Instagram](https://www.instagram.com/diwberg/)
 
